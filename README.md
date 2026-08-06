@@ -4,6 +4,8 @@ Catalog of healthcare digital twin use cases in women's health, focused on chron
 
 Women drive roughly 80% of household healthcare decisions. Every use case here is framed around a decision someone actually has to make — not around what data happens to be available.
 
+When you think of Digital Twins, think of making a digital copy of a person and everything about them, including medical history and wearable data. Then, you run simulations on that digital copy to learn what works. Lastly, combine millions of patients' data to find people like them to further enhance the resolution of their twin and make it more accurate. 
+
 <p align="center">
   <img src="assets/digital-twin-data-fabric.svg" width="100%" alt="Animated diagram: eight healthcare data sources — Epic and FHIR, labs and vitals, imaging and procedures, claims and coverage, wearables and remote monitoring, patient-reported outcomes, social determinants and access, history and genomics — stream continuously into a human figure representing the patient digital twin, which maintains state and emits a decision.">
 </p>
