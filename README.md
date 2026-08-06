@@ -35,15 +35,18 @@ Reusable blanks live in [`templates/`](./templates). Start there for a new use c
 | Use case | Problem it solves | Primary KPI | Status |
 |---|---|---|---|
 | [Endometriosis → CVD risk](./endometriosis-cvd-risk) | Elevated long-term cardiovascular risk in women with endometriosis is documented in the literature but never carried across the service line boundary into prevention decisions | Prevention pathway enrollment within 180 days of flag | **Exemplar — complete** |
+| [Hypertensive pregnancy → lifetime CVD](./hypertensive-pregnancy-cvd-risk) | A hypertensive disorder of pregnancy is the strongest early cardiovascular risk signal most women will ever receive, and it is discarded when obstetric care ends at six weeks | Prevention handoff completed + durable risk flag within 180 days of delivery | **Drafted — complete** |
 | Chronic pelvic pain pathway | Patients loop through imaging, referrals, and procedures for years without reaching multidisciplinary care; no one owns detecting the loop | Time to multidisciplinary care enrollment | Planned |
+| Gestational diabetes → type 2 diabetes | Same handoff cliff as HDP, different endpoint; postpartum glucose screening is recommended and routinely missed | Postpartum glucose screening completion within 12 weeks | Planned |
 | PCOS → cardiometabolic risk | Cardiometabolic screening and intervention are inconsistently applied in PCOS despite established risk | Appropriate metabolic screening and intervention rate | Planned |
-| Hypertensive pregnancy → lifetime CVD | Postpartum hypertensive disorders predict lifetime cardiovascular risk, and the signal is lost at the end of obstetric care | Postpartum-to-primary-care prevention handoff rate | Planned |
 | Breast cancer survivorship | Cardiotoxicity, bone health, and menopause management fragment across oncology, cardiology, and primary care after active treatment ends | Survivorship care plan completion with owned follow-up | Planned |
 | Perimenopause / midlife transition | Symptom burden and cardiometabolic change are managed reactively across disconnected visits | Documented management plan and symptom-burden improvement | Planned |
 | Chronic anemia / heavy menstrual bleeding | Repeat presentations treated episodically without escalation to definitive workup | Time to definitive diagnosis and treatment | Planned |
 | Autoimmune conditions in women | Female-predominant autoimmune disease carries cardiovascular and pregnancy risk that is rarely coordinated | Coordinated risk-management plan rate | Planned |
 
 Status values: **Planned** → **Drafted** → **Complete** → **Piloted** → **Retired (with retrospective)**.
+
+**Where to start reading.** [`endometriosis-cvd-risk`](./endometriosis-cvd-risk) is the cleanest illustration of the catalog structure. [`hypertensive-pregnancy-cvd-risk`](./hypertensive-pregnancy-cvd-risk) is the stronger pilot candidate: a documented 2–4x risk multiple, a 14-day leading indicator that gates the pilot before you spend a year on it, an existing reimbursement path, and a disparity that peer institutions have already demonstrated is closable.
 
 Retired use cases stay in the catalog with their retrospective attached. The abandon records are the evidence that the stop rules are real.
 
@@ -57,6 +60,8 @@ Retired use cases stay in the catalog with their retrospective attached. The aba
 6. **Simplest thing that works.** A transparent composite score beats a learned model when the learned model costs you the governance conversation.
 7. **Sandbox, then live.** Digital twin sandboxes and the live EHR are separate environments with explicit, written promotion criteria.
 8. **Replayability is non-negotiable.** If you cannot reconstruct why a patient was flagged, you cannot defend it in a governance or adverse-event review.
+9. **Measurability before intervention.** If you cannot detect the outcome on a retrospective cohort, the pilot cannot conclude anything. Prove the measurement first.
+10. **A twin's job is to carry a signal across a boundary no human role owns.** Where an existing role already owns the handoff, you have a process problem, not a twin problem.
 
 ## Ecosystem
 
