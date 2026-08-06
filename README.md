@@ -4,6 +4,12 @@ Catalog of healthcare digital twin use cases in women's health, focused on chron
 
 Women drive roughly 80% of household healthcare decisions. Every use case here is framed around a decision someone actually has to make — not around what data happens to be available.
 
+<p align="center">
+  <img src="assets/digital-twin-data-fabric.svg" width="100%" alt="Animated diagram: eight healthcare data sources — Epic and FHIR, labs and vitals, imaging and procedures, claims and coverage, wearables and remote monitoring, patient-reported outcomes, social determinants and access, history and genomics — stream continuously into a human figure representing the patient digital twin, which maintains state and emits a decision.">
+</p>
+
+<p align="center"><sub><b>The digital thread is the input, not the product.</b> Eight streams update one patient twin continuously; the twin holds state, and the state drives a single decision. If a source cannot be traced to a state change, and that state change cannot be traced to a decision, it does not belong in the design.</sub></p>
+
 ## Why this catalog exists
 
 Most digital twin material in healthcare stops at capability: what a twin *could* model. That is not the decision maker's problem. Their problem is: *which one problem does this solve, how will I know in twelve months whether it worked, and when am I allowed to stop paying for it?*
