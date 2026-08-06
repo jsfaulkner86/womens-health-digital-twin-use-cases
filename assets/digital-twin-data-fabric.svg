@@ -4,34 +4,60 @@
 
   <defs>
     <!-- ===== body geometry ===== -->
-    <path id="torsoPath" d="M580,132
-      C600,133 607,149 607,169 C607,185 601,195 594,200
-      C591,203 590,207 590,214 C590,222 600,228 610,232 C628,237 638,246 643,259
-      C641,276 634,290 630,306 C626,320 618,330 613,340
-      C609,348 608,356 610,364 C613,379 626,388 634,402
-      C639,416 640,426 638,440 C634,468 629,493 626,520
-      C622,546 618,574 614,600 L614,608 L596,608 L596,600
-      C596,566 594,520 590,470 C588,444 585,424 580,416
-      C575,424 572,444 570,470 C566,520 564,566 564,600
-      L564,608 L546,608 L546,600 C541,574 536,546 534,520
-      C531,493 526,468 522,440 C520,426 521,416 526,402
-      C534,388 547,379 550,364 C552,356 551,348 547,340
-      C542,330 534,320 530,306 C526,290 519,276 517,259
-      C522,246 532,238 550,232 C560,228 570,222 570,214
-      C570,207 569,203 566,200 C559,195 553,185 553,169 C553,149 560,133 580,133 Z"/>
-    <path id="armR" d="M641,251 C660,263 666,291 665,320 C664,352 660,384 656,410
-      C654,422 654,432 650,438 C646,444 640,443 638,436 C635,424 634,414 633,404
-      C630,378 632,348 634,318 C635,292 632,272 629,259 C633,251 637,249 641,251 Z"/>
-    <path id="armL" d="M519,251 C500,263 494,291 495,320 C496,352 500,384 504,410
-      C506,422 506,432 510,438 C514,444 520,443 522,436 C525,424 526,414 527,404
-      C530,378 528,348 526,318 C525,292 528,272 531,259 C527,251 523,249 519,251 Z"/>
-    <path id="footR" d="M596,608 L614,608 L623,617 C625,620 623,623 618,623 L595,623 C591,623 590,619 592,616 Z"/>
-    <path id="footL" d="M564,608 L546,608 L537,617 C535,620 537,623 542,623 L565,623 C569,623 570,619 568,616 Z"/>
+    <!-- long hair mass, drawn behind the body -->
+    <path id="hairPath" d="M580,126
+      C600,126 615,146 617,172 C619,196 621,218 620,242
+      C620,258 617,272 613,284 C610,290 604,288 603,280
+      C602,264 599,250 596,238 C594,228 593,222 593,214
+      L567,214 C567,222 566,228 564,238
+      C561,250 558,264 557,280 C556,288 550,290 547,284
+      C543,272 540,258 540,242 C539,218 541,196 543,172
+      C545,146 560,126 580,126 Z"/>
+    <path id="torsoPath" d="M580,128
+      C596,128 605,144 605,164 C605,180 602,191 596,197
+      C594,201 593,205 593,212 C594,222 602,228 612,233
+      C620,239 626,247 627,259 C628,271 628,283 626,297
+      C622,310 616,326 613,344 C611,358 620,374 629,388
+      C633,400 632,416 628,432 C623,452 611,472 605,494
+      C602,506 609,518 610,530 C611,552 599,578 594,596
+      C593,604 597,610 603,613 C608,616 611,619 610,623
+      L610,624 L585,624 C584,614 584,606 584,596
+      C588,560 592,548 592,534 C592,516 591,506 591,494
+      C591,470 589,448 587,430 C585,414 583,402 582,392
+      C578,402 577,414 573,430 C571,448 569,470 569,494
+      C569,506 568,516 568,534 C568,548 572,560 576,596
+      C576,606 576,614 575,624 L550,624 L550,623
+      C549,619 552,616 557,613 C563,610 567,604 566,596
+      C561,578 549,552 550,530 C550,518 557,506 555,494
+      C549,472 537,452 532,432 C528,416 527,400 531,388
+      C540,374 549,358 547,344 C544,326 538,310 534,296
+      C531,282 529,270 529,258 C534,247 540,239 548,233
+      C558,228 566,222 566,212 C567,205 566,201 564,197
+      C558,191 555,180 555,164 C555,144 564,128 580,128 Z"/>
+    <path id="armR" d="M624,238
+      C638,248 646,266 647,286 C648,306 645,326 641,344
+      C639,360 636,374 634,390 C632,404 630,414 630,424
+      C632,436 634,444 633,452 C632,461 627,465 623,463
+      C619,461 617,452 616,444 C615,436 615,430 616,422
+      C618,406 620,392 622,376 C623,358 625,340 626,322
+      C627,302 628,282 626,264 C624,252 620,244 618,238
+      C619,234 622,234 624,238 Z"/>
+    <path id="armL" d="M536,238
+      C522,248 514,266 513,286 C512,306 515,326 519,344
+      C521,360 524,374 526,390 C528,404 530,414 530,424
+      C528,436 526,444 527,452 C528,461 533,465 537,463
+      C541,461 543,452 544,444 C545,436 545,430 544,422
+      C542,406 540,392 538,376 C537,358 535,340 534,322
+      C533,302 532,282 534,264 C536,252 540,244 542,238
+      C541,234 538,234 536,238 Z"/>
 
     <clipPath id="bodyClip">
       <use xlink:href="#torsoPath" href="#torsoPath"/>
       <use xlink:href="#armR" href="#armR"/>
       <use xlink:href="#armL" href="#armL"/>
+    </clipPath>
+    <clipPath id="hairClip">
+      <use xlink:href="#hairPath" href="#hairPath"/>
     </clipPath>
 
     <!-- ===== volumetric shading ===== -->
@@ -91,15 +117,15 @@
     <filter id="innerShade" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="9"/></filter>
 
     <!-- ===== thread paths ===== -->
-    <path id="t1" d="M258,168 C 372,168 430,238 528,268" fill="none"/>
-    <path id="t2" d="M258,272 C 372,272 440,284 524,300" fill="none"/>
-    <path id="t3" d="M258,376 C 372,376 444,346 526,328" fill="none"/>
-    <path id="t4" d="M258,480 C 372,480 448,398 532,356" fill="none"/>
-    <path id="t5" d="M902,168 C 788,168 730,238 632,268" fill="none"/>
-    <path id="t6" d="M902,272 C 788,272 720,284 636,300" fill="none"/>
-    <path id="t7" d="M902,376 C 788,376 716,346 634,328" fill="none"/>
-    <path id="t8" d="M902,480 C 788,480 712,398 628,356" fill="none"/>
-    <path id="tOut" d="M580,626 C 580,648 580,652 580,664" fill="none"/>
+    <path id="t1" d="M258,168 C 372,168 430,238 514,266" fill="none"/>
+    <path id="t2" d="M258,272 C 372,272 440,284 512,296" fill="none"/>
+    <path id="t3" d="M258,376 C 372,376 444,346 518,326" fill="none"/>
+    <path id="t4" d="M258,480 C 372,480 448,398 528,352" fill="none"/>
+    <path id="t5" d="M902,168 C 788,168 730,238 646,266" fill="none"/>
+    <path id="t6" d="M902,272 C 788,272 720,284 648,296" fill="none"/>
+    <path id="t7" d="M902,376 C 788,376 716,346 642,326" fill="none"/>
+    <path id="t8" d="M902,480 C 788,480 712,398 632,352" fill="none"/>
+    <path id="tOut" d="M580,638 C 580,650 580,654 580,664" fill="none"/>
   </defs>
 
   <rect width="1160" height="740" fill="url(#bgWash)"/>
@@ -199,36 +225,46 @@
   <!-- ===== the twin ===== -->
   <g>
     <!-- ambient volume glow -->
-    <ellipse cx="580" cy="350" rx="150" ry="222" fill="url(#coreGlow)" opacity="0.45">
+    <ellipse cx="580" cy="368" rx="126" ry="244" fill="url(#coreGlow)" opacity="0.45">
       <animate attributeName="opacity" values="0.30;0.55;0.30" dur="5s" repeatCount="indefinite"/>
     </ellipse>
 
     <!-- sandbox boundary -->
-    <ellipse cx="580" cy="380" rx="132" ry="248" fill="none" stroke="#334155" stroke-width="1.2" stroke-dasharray="5 9" opacity="0.5">
+    <ellipse cx="580" cy="376" rx="116" ry="262" fill="none" stroke="#334155" stroke-width="1.2" stroke-dasharray="5 9" opacity="0.5">
       <animateTransform attributeName="transform" type="rotate" from="0 580 380" to="360 580 380" dur="60s" repeatCount="indefinite"/>
     </ellipse>
 
     <!-- contact shadow under figure -->
-    <ellipse cx="580" cy="628" rx="86" ry="9" fill="#000000" opacity="0.5" filter="url(#soften)"/>
+    <ellipse cx="580" cy="634" rx="60" ry="8" fill="#000000" opacity="0.5" filter="url(#soften)"/>
 
     <!-- BODY: base volume -->
     <g>
-      <use xlink:href="#footL" href="#footL" fill="#0C1226"/>
-      <use xlink:href="#footR" href="#footR" fill="#0C1226"/>
-      <use xlink:href="#footL" href="#footL" fill="url(#formShade)"/>
-      <use xlink:href="#footR" href="#footR" fill="url(#formShade)"/>
-      <!-- arms sit behind the torso -->
+      <!-- long hair, behind the body -->
+      <use xlink:href="#hairPath" href="#hairPath" fill="#0A0F22"/>
+      <use xlink:href="#hairPath" href="#hairPath" fill="url(#formShade)"/>
+      <g clip-path="url(#hairClip)">
+        <rect x="530" y="110" width="100" height="190" fill="url(#depthShade)"/>
+        <g fill="none" stroke="#A5B4FC" stroke-opacity="0.20" stroke-width="1">
+          <path d="M552,140 C545,180 542,238 546,286"/>
+          <path d="M561,133 C553,178 550,238 554,288"/>
+          <path d="M600,133 C608,178 611,238 607,288"/>
+          <path d="M609,140 C616,180 619,238 615,286"/>
+        </g>
+      </g>
+      <use xlink:href="#hairPath" href="#hairPath" fill="none" stroke="url(#rimGrad)" stroke-width="1.4" stroke-linejoin="round"/>
+
+      <!-- arms sit behind the torso so the shoulder seam closes -->
       <use xlink:href="#armL" href="#armL" fill="#0C1226"/>
       <use xlink:href="#armR" href="#armR" fill="#0C1226"/>
       <use xlink:href="#armL" href="#armL" fill="url(#formShade)"/>
       <use xlink:href="#armR" href="#armR" fill="url(#formShade)"/>
       <use xlink:href="#armL" href="#armL" fill="url(#depthShade)"/>
       <use xlink:href="#armR" href="#armR" fill="url(#depthShade)"/>
-      <g fill="none" stroke="url(#rimGrad)" stroke-width="1.5" stroke-linejoin="round">
+      <g fill="none" stroke="url(#rimGrad)" stroke-width="1.4" stroke-linejoin="round">
         <use xlink:href="#armL" href="#armL"/>
         <use xlink:href="#armR" href="#armR"/>
       </g>
-      <!-- torso overlaps the inner arm edge, closing the shoulder seam -->
+
       <use xlink:href="#torsoPath" href="#torsoPath" fill="#0C1226"/>
       <use xlink:href="#torsoPath" href="#torsoPath" fill="url(#formShade)"/>
       <use xlink:href="#torsoPath" href="#torsoPath" fill="url(#depthShade)"/>
@@ -237,49 +273,51 @@
     <!-- clipped interior: light, contours, anatomy -->
     <g clip-path="url(#bodyClip)">
       <!-- key light from upper left -->
-      <rect x="480" y="120" width="200" height="520" fill="url(#keyLight)"/>
+      <rect x="495" y="120" width="180" height="516" fill="url(#keyLight)"/>
 
       <!-- form shadow along right edge -->
-      <path d="M700,120 L700,660 L632,660 C644,540 648,380 636,140 Z" fill="#0B1026" opacity="0.55" filter="url(#innerShade)"/>
+      <path d="M700,110 L700,660 L628,660 C640,540 646,380 632,130 Z" fill="#0B1026" opacity="0.55" filter="url(#innerShade)"/>
       <!-- softer shadow under arms / inner thigh -->
-      <path d="M629,255 C634,320 632,392 630,440 L642,440 L642,255 Z" fill="#0B1026" opacity="0.30" filter="url(#innerShade)"/>
-      <path d="M531,255 C526,320 528,392 530,440 L518,440 L518,255 Z" fill="#0B1026" opacity="0.18" filter="url(#innerShade)"/>
-      <path d="M574,420 C578,470 578,540 576,610 L586,610 C584,540 584,470 588,420 Z" fill="#0B1026" opacity="0.42" filter="url(#innerShade)"/>
+      <path d="M626,246 C632,320 630,392 628,452 L648,452 L648,246 Z" fill="#0B1026" opacity="0.30" filter="url(#innerShade)"/>
+      <path d="M534,246 C528,320 530,392 532,452 L512,452 L512,246 Z" fill="#0B1026" opacity="0.18" filter="url(#innerShade)"/>
+      <path d="M571,400 C577,470 577,545 575,620 L587,620 C585,545 585,470 589,400 Z" fill="#0B1026" opacity="0.42" filter="url(#innerShade)"/>
 
       <!-- transverse contour bands: latitude lines that sag to imply roundness -->
       <g fill="none" stroke="url(#contourGrad)" stroke-width="1.15">
-        <path d="M470,232 Q580,244 690,232"/>
-        <path d="M470,262 Q580,275 690,262"/>
-        <path d="M470,292 Q580,305 690,292"/>
-        <path d="M470,322 Q580,335 690,322"/>
-        <path d="M470,352 Q580,365 690,352"/>
-        <path d="M470,382 Q580,395 690,382"/>
-        <path d="M470,412 Q580,424 690,412"/>
-        <path d="M470,444 Q580,455 690,444"/>
-        <path d="M470,476 Q580,487 690,476"/>
-        <path d="M470,508 Q580,518 690,508"/>
-        <path d="M470,540 Q580,550 690,540"/>
-        <path d="M470,572 Q580,581 690,572"/>
-        <path d="M470,600 Q580,608 690,600"/>
+        <path d="M470,246 Q580,257 690,246"/>
+        <path d="M470,272 Q580,283 690,272"/>
+        <path d="M470,298 Q580,309 690,298"/>
+        <path d="M470,324 Q580,335 690,324"/>
+        <path d="M470,350 Q580,361 690,350"/>
+        <path d="M470,376 Q580,387 690,376"/>
+        <path d="M470,402 Q580,413 690,402"/>
+        <path d="M470,428 Q580,439 690,428"/>
+        <path d="M470,454 Q580,465 690,454"/>
+        <path d="M470,480 Q580,490 690,480"/>
+        <path d="M470,506 Q580,514 690,506"/>
+        <path d="M470,532 Q580,539 690,532"/>
+        <path d="M470,558 Q580,564 690,558"/>
+        <path d="M470,584 Q580,589 690,584"/>
+        <path d="M470,610 Q580,614 690,610"/>
       </g>
 
       <!-- longitudinal meridians: curve with the body's cross-section -->
       <g fill="none" stroke="#A5B4FC" stroke-opacity="0.22" stroke-width="1">
-        <path d="M552,214 C542,300 544,370 550,440 C556,520 556,570 556,606"/>
-        <path d="M608,214 C618,300 616,370 610,440 C604,520 604,570 604,606"/>
-        <path d="M580,206 C580,300 580,360 580,414"/>
+        <path d="M556,212 C548,290 550,360 556,430 C560,510 562,570 562,620"/>
+        <path d="M604,212 C612,290 610,360 604,430 C600,510 598,570 598,620"/>
+        <path d="M580,200 C580,290 580,350 580,392"/>
       </g>
 
       <!-- vascular tree -->
       <g fill="none" stroke="#7DD3FC" stroke-opacity="0.40" stroke-width="1.3" stroke-linecap="round">
         <path d="M580,232 C578,258 574,272 566,286"/>
         <path d="M566,292 C572,314 578,330 580,352 C582,376 580,392 580,404"/>
-        <path d="M566,292 C556,308 548,330 546,356"/>
-        <path d="M580,352 C592,362 602,372 606,388"/>
+        <path d="M566,292 C558,308 552,330 551,352"/>
+        <path d="M580,352 C591,362 600,372 604,384"/>
         <path d="M580,404 C572,430 568,470 566,510"/>
         <path d="M580,404 C588,430 592,470 594,510"/>
-        <path d="M572,240 C560,250 548,262 542,278"/>
-        <path d="M588,240 C600,250 612,262 618,278"/>
+        <path d="M572,240 C562,250 552,262 547,278"/>
+        <path d="M588,240 C598,250 608,262 613,278"/>
       </g>
       <!-- circulating markers along the vascular tree -->
       <circle r="2.3" fill="#BAE6FD" opacity="0.9">
@@ -297,11 +335,12 @@
       </g>
 
       <!-- scanning simulation sweep, clipped to the body -->
-      <rect x="460" y="216" width="240" height="46" fill="url(#scanLine)" opacity="0.28">
-        <animate attributeName="y" values="216;600;216" dur="7s" repeatCount="indefinite"/>
+      <rect x="460" y="242" width="240" height="46" fill="url(#scanLine)" opacity="0">
+        <animate attributeName="y" values="242;612;242" dur="7s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.28;0.28;0" keyTimes="0;0.08;0.92;1" dur="7s" repeatCount="indefinite"/>
       </rect>
-      <rect x="460" y="216" width="240" height="2.4" fill="url(#scanLine)">
-        <animate attributeName="y" values="216;600;216" dur="7s" repeatCount="indefinite"/>
+      <rect x="460" y="242" width="240" height="2.4" fill="url(#scanLine)" opacity="0">
+        <animate attributeName="y" values="242;612;242" dur="7s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="0;0.95;0.95;0" keyTimes="0;0.06;0.94;1" dur="7s" repeatCount="indefinite"/>
       </rect>
     </g>
@@ -309,22 +348,20 @@
     <!-- rim light outline: bright on the lit side, falling off to the right -->
     <g fill="none" stroke="url(#rimGrad)" stroke-width="1.6" stroke-linejoin="round">
       <use xlink:href="#torsoPath" href="#torsoPath"/>
-      <use xlink:href="#footL" href="#footL"/>
-      <use xlink:href="#footR" href="#footR"/>
     </g>
     <!-- specular edge accent on the lit side -->
-    <path d="M553,169 C553,149 560,133 580,133" fill="none" stroke="#E0F2FE" stroke-opacity="0.85" stroke-width="1.7" filter="url(#softenXs)"/>
-    <path d="M517,259 C522,246 532,238 550,232" fill="none" stroke="#CFFAFE" stroke-opacity="0.7" stroke-width="1.7" filter="url(#softenXs)"/>
-    <path d="M519,251 C500,263 494,291 495,320 C496,352 500,384 504,410" fill="none" stroke="#CFFAFE" stroke-opacity="0.55" stroke-width="1.6" filter="url(#softenXs)"/>
-    <path d="M534,520 C531,493 526,468 522,440" fill="none" stroke="#BAE6FD" stroke-opacity="0.45" stroke-width="1.5" filter="url(#softenXs)"/>
+    <path d="M540,242 C539,218 541,196 543,172 C545,146 560,126 580,126" fill="none" stroke="#E0F2FE" stroke-opacity="0.8" stroke-width="1.7" filter="url(#softenXs)"/>
+    <path d="M529,258 C534,247 540,239 548,233" fill="none" stroke="#CFFAFE" stroke-opacity="0.65" stroke-width="1.7" filter="url(#softenXs)"/>
+    <path d="M536,238 C522,248 514,266 513,286 C512,306 515,326 519,344 C521,360 524,374 526,390" fill="none" stroke="#CFFAFE" stroke-opacity="0.6" stroke-width="1.6" filter="url(#softenXs)"/>
+    <path d="M555,494 C549,472 537,452 532,432" fill="none" stroke="#BAE6FD" stroke-opacity="0.45" stroke-width="1.5" filter="url(#softenXs)"/>
 
     <!-- cardiac node -->
     <g>
-      <circle cx="566" cy="288" r="16" fill="#F87171" opacity="0.18" filter="url(#softenSm)">
+      <circle cx="570" cy="288" r="16" fill="#F87171" opacity="0.18" filter="url(#softenSm)">
         <animate attributeName="r" values="12;23;12" dur="1.15s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="0.34;0.05;0.34" dur="1.15s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="566" cy="288" r="5.5" fill="#FCA5A5">
+      <circle cx="570" cy="288" r="5.5" fill="#FCA5A5">
         <animate attributeName="r" values="5;7;5" dur="1.15s" repeatCount="indefinite"/>
       </circle>
     </g>
